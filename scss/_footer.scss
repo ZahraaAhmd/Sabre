@@ -1,0 +1,37 @@
+.Sb-footer {
+    padding: 24px 0;
+    ul {
+        list-style: none;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        li {
+            text-align: center;
+            a {
+                display: block;
+                color: $dark-gray;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 13px;
+                transition: all 0.3s ease-in-out;
+                text-decoration: none !important;
+                i {
+                    display: block;
+                    font-size: 30px;
+                    color: $dark-blue;
+                    margin-bottom: 8px;
+                    transition: all 0.3s ease-in-out;
+                }
+                &:hover {
+                    color: $dark-orange;
+                    i {
+                        color: $dark-orange;
+                    }
+                }
+            }
+        }
+    }
+}

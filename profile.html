@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Sabre</title>
+</head>
+
+<body>
+    <div class="main-content">
+        <!-- start header block -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand d-none d-lg-block" href="#">Logo</a>
+                <div class="d-block d-lg-none page-name">
+                    <i class="fas fa-chevron-left mr-4"></i> Profile
+                </div>
+                <div class="header-options d-block d-lg-none">
+                    <a class="relative" href="#">
+                        <i class="fas fa-envelope-open-text"></i>
+                        <span class="msg-num">1</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- small screens head -->
+                    <div class="menu-head d-flex d-lg-none align-items-center justify-content-between">
+                        <div class="page-name">
+                            Paul Brown
+                        </div>
+                        <div class="header-options">
+                            <a class="relative" href="#">
+                                <i class="fas fa-envelope-open-text"></i>
+                                <span class="msg-num">1</span>
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fas fa-times"></i>
+                            </button>
+
+                        </div>
+                    </div>
+                    <!-- nav menus -->
+                    <ul class="navbar-nav mx-auto menu-links">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="far fa-calendar"></i> Calendar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-file-alt"></i> Assignments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-stopwatch"></i> Shift Stopwatch</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="far fa-clock"></i> Timesheets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-file-invoice"></i> Invoices</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="far fa-edit"></i> Application</a>
+                        </li>
+                    </ul>
+
+                    <ul class="d-flex d-lg-none menu-options">
+                        <li>
+                            <a href="#"><span class="user-img"><img src="images/user.svg"></span> Profile</a>
+                        </li>
+                        <li class="bottom-menu">
+                            <a href="#"><i class="far fa-question-circle"></i> help</a>
+                            <a href="#"><i class="fas fa-sign-out-alt"></i> logout</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto menu-options d-none d-lg-flex">
+                        <li class="nav-item mr-3">
+                            <a class="nav-link relative" href="#">
+                                <i class="fas fa-envelope-open-text"></i>
+                                <span class="msg-num">1</span>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown profile-dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-user"></i> Paul
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#"><i class="far fa-question-circle"></i> help</a>
+                                <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- start section profile head -->
+        <section class="Sb-page-head mb-3">
+            <div class="container">
+                <div class="d-none d-lg-block">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Profile</li>
+                        </ol>
+                    </nav>
+                </div>
+                <h1>Paul Brown</h1>
+            </div>
+        </section>
+
+        <!-- start section profile content -->
+        <section class="Sb-profile">
+            <div class="container">
+                <div class="accordion" id="accordionExample">
+                    <div class="card mb-3">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne">
+                                Notifications & Settings
+                            </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne">
+                            <div class="card-body">
+                                <div class="subscribe-block text-center">
+                                    <p>
+                                        You are not currently subscribed to push messaging. Click the button below to subscribe.
+                                    </p>
+                                    <button type="button" class="btn btn-warning subscribe-btn">Subscribe</button>
+                                </div>
+                                <div class="notification-block d-none">
+                                    <form>
+                                        <div class="custom-control custom-switch mb-3">
+                                            <input type="checkbox" class="custom-control-input" id="notifications" checked="checked">
+                                            <label class="custom-control-label" for="notifications">Accept push notifications</label>
+                                        </div>
+                                        <div class="custom-control custom-switch mb-3">
+                                            <input type="checkbox" class="custom-control-input" id="recognition">
+                                            <label class="custom-control-label" for="recognition">Turn on facial recognition</label>
+                                        </div>
+                                        <div class="custom-control custom-switch">
+                                            <input type="checkbox" class="custom-control-input" id="tracking" checked="checked">
+                                            <label class="custom-control-label" for="tracking">Allow location tracking</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Agency
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+                            <div class="card-body">
+
+                                <div class="text-center">
+                                    <p class="mb-2">
+                                        You are registered with ABC EMPLOYMENT.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Password
+                            </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse " aria-labelledby="headingThree">
+                            <div class="card-body">
+                                <p>
+                                    Complete the fields below to change your password.
+                                </p>
+                                <div class="alert-danger mb-3">Enter your current password</div>
+                                <form action="#" method="post">
+                                    <div class="form-group mb-3">
+                                        <label class="form-label mb-2">Current Password</label>
+                                        <div class="input-with-icon">
+                                            <input type="password" class="form-control">
+                                            <span class="input-icon"><img src="images/password.svg"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <label class="form-label mb-2">New Password</label>
+                                        <div class="input-with-icon">
+                                            <input type="password" class="form-control">
+                                            <span class="input-icon"><img src="images/password.svg"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group  mb-5">
+                                        <label class="form-label mb-2">Confirm New Password</label>
+                                        <div class="input-with-icon">
+                                            <input type="password" class="form-control">
+                                            <span class="input-icon"><img src="images/password.svg"></span>
+                                        </div>
+                                    </div>
+                                    <div class="text-center mb-3">
+                                        <button type="submit" class="btn btn-warning">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+    </div>
+
+    <div class="Sb-footer">
+        <div class="container">
+            <ul>
+                <li><a href="#"><i class="far fa-calendar"></i>Calendar</a></li>
+                <li>
+                    <a href="#"><i class="fas fa-stopwatch"></i>Stopwatch</a>
+                </li>
+                <li>
+                    <a href="#"><i class="far fa-clock"></i>Timesheet</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-home"></i>Home</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/jquery.min.js "></script>
+    <script src="js/popper.min.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/custom.js "></script>
+</body>
