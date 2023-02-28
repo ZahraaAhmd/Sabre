@@ -29,6 +29,10 @@ body {
     border-radius: 0px 0px 60px 60px;
     padding-bottom: 60px;
     min-height: calc(100vh - 110px);
+    &.home-page-content {
+        background: url("../images/body-bg.svg") no-repeat center;
+        background-size: 100% auto;
+    }
 }
 
 

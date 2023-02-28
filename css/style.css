@@ -27,6 +27,11 @@ body.hide-scroll {
   min-height: calc(100vh - 110px);
 }
 
+.main-content.home-page-content {
+  background: url("../images/body-bg.svg") no-repeat center;
+  background-size: 100% auto;
+}
+
 /***** buttons style *****/
 .btn {
   transition: all 0.3s ease-in-out;
@@ -519,6 +524,73 @@ form .custom-switch .custom-control-input:checked ~ .custom-control-label::after
   color: #40C4FF;
   margin-right: 14px;
   vertical-align: middle;
+}
+
+/*** home page style *****/
+.Sb-home {
+  min-height: calc(100vh - 215px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Sb-home .container {
+  max-width: 500px;
+}
+
+.Sb-home a {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 19px;
+  color: #00529F;
+  text-align: center;
+  display: block;
+  text-decoration: none !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.Sb-home a .link-icon {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #00529F;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  margin: 0 auto 15px auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.Sb-home a .link-icon i {
+  color: #fff;
+  font-size: 30px;
+}
+
+@media (min-width: 992px) {
+  .Sb-home a .link-icon {
+    width: 100px;
+    height: 100px;
+  }
+  .Sb-home a .link-icon i {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 992px) {
+  .Sb-home a {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.Sb-home a:hover {
+  color: #F65715;
+}
+
+.Sb-home a:hover .link-icon {
+  background: #F65715;
 }
 
 /*** profile page style *****/
