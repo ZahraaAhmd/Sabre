@@ -17,7 +17,7 @@
         <!-- start header block -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand d-none d-lg-block" href="#">Logo</a>
+                <a class="navbar-brand d-none d-lg-block" href="#"><img src="images/profile-img.jpg"></a>
                 <div class="d-block d-lg-none page-name">
                     <i class="fas fa-chevron-left mr-4"></i> Profile
                 </div>
@@ -33,76 +33,105 @@
                 </div>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- small screens head -->
-                    <div class="menu-head d-flex d-lg-none align-items-center justify-content-between">
-                        <div class="page-name">
-                            Paul Brown
-                        </div>
-                        <div class="header-options">
-                            <a class="relative" href="#">
-                                <i class="fas fa-envelope-open-text"></i>
-                                <span class="msg-num">1</span>
-                            </a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <i class="fas fa-times"></i>
-                            </button>
-
-                        </div>
-                    </div>
                     <!-- nav menus -->
                     <ul class="navbar-nav mx-auto menu-links">
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="far fa-calendar"></i> Calendar</a>
+                            <a class="nav-link" href="#">Calendar</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fas fa-file-alt"></i> Assignments</a>
+                            <a class="nav-link" href="#">Assignments</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fas fa-stopwatch"></i> Shift Stopwatch</a>
+                            <a class="nav-link" href="#">Shift Stopwatch</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="far fa-clock"></i> Timesheets</a>
+                            <a class="nav-link" href="#">Timesheets</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fas fa-file-invoice"></i> Invoices</a>
+                            <a class="nav-link" href="#">Invoices</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="far fa-edit"></i> Application</a>
+                            <a class="nav-link" href="#">Application</a>
                         </li>
                     </ul>
-
-                    <ul class="d-flex d-lg-none menu-options">
-                        <li>
-                            <a href="#"><span class="user-img"><img src="images/user.svg"></span> Profile</a>
-                        </li>
-                        <li class="bottom-menu">
-                            <a href="#"><i class="far fa-question-circle"></i> help</a>
-                            <a href="#"><i class="fas fa-sign-out-alt"></i> logout</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav ml-auto menu-options d-none d-lg-flex">
-                        <li class="nav-item mr-3">
+                    <ul class="navbar-nav ml-auto menu-options">
+                        <li class="nav-item">
                             <a class="nav-link relative" href="#">
                                 <i class="fas fa-envelope-open-text"></i>
                                 <span class="msg-num">1</span>
                             </a>
                         </li>
-                        <li class="nav-item dropdown profile-dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                                <i class="fas fa-user"></i> Paul
-                            </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#"><i class="far fa-question-circle"></i> help</a>
-                                <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> logout</a>
-                            </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="far fa-question-circle"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-sign-out-alt"></i></a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+        <!-- small screens menu -->
+        <div class="small-menus">
+            <!-- small screens head -->
+            <div class="menu-head d-flex  align-items-center justify-content-between">
+                <div class="page-name">
+                    Paul Brown
+                </div>
+                <div class="header-options">
+                    <a class="relative" href="#">
+                        <i class="fas fa-envelope-open-text"></i>
+                        <span class="msg-num">1</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-times"></i>
+            </button>
+
+                </div>
+            </div>
+            <div class="menu-body">
+                <!-- nav menus -->
+                <ul class="menu-options d-flex align-items-center justify-content-between">
+                    <li>
+                        <a href="#"><span class="user-img"><img src="images/user.svg"></span> Profile</a>
+                    </li>
+                    <li class="bottom-menu">
+                        <a href="#"><i class="far fa-question-circle"></i> help</a>
+                        <a href="logout.html"><i class="fas fa-sign-out-alt"></i> logout</a>
+                    </li>
+                </ul>
+                <ul class="menu-links">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="far fa-calendar"></i> Calendar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-file-alt"></i> Assignments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-stopwatch"></i> Shift Stopwatch</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="far fa-clock"></i> Timesheets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-file-invoice"></i> Invoices</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="far fa-edit"></i> Application</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="notification-body">
+
+            </div>
+        </div>
 
         <!-- start section profile head -->
         <section class="Sb-page-head mb-3">

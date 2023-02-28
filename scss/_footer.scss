@@ -34,4 +34,15 @@
             }
         }
     }
+    .terms {
+        a {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            color: $dark-blue;
+            @media(min-width: 992px) {
+                font-size: 20px;
+            }
+        }
+    }
 }

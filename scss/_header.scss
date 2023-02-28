@@ -1,32 +1,34 @@
 /**** navbar style ******/
 
+.msg-num {
+    background: #FB0707;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    position: absolute;
+    top: -4px;
+    right: 7px;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 13px;
+    color: #FBFBFB;
+}
+
+.fa-envelope-open-text {
+    font-size: 26px;
+    color: $dark-blue;
+}
+
 .navbar {
     background-color: transparent !important;
     background: linear-gradient(270deg, #E6E6E6 -30.64%, #FFFFFF 106.54%);
     box-shadow: 0px 29px 24px rgba(0, 0, 0, 0.06), 0px 18.7963px 14.0556px rgba(0, 0, 0, 0.0455556), 0px 11.1704px 7.64444px rgba(0, 0, 0, 0.0364444), 0px 5.8px 3.9px rgba(0, 0, 0, 0.03), 0px 2.36296px 1.95556px rgba(0, 0, 0, 0.0235556), 0px 0.537037px 0.944444px rgba(0, 0, 0, 0.0144444);
-    padding: 20px 0;
+    padding: 10px 0;
     .container-fluid {
         max-width: 1400px;
-    }
-    .msg-num {
-        background: #FB0707;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 17px;
-        height: 17px;
-        border-radius: 50%;
-        position: absolute;
-        top: -4px;
-        right: 7px;
-        font-weight: 700;
-        font-size: 10px;
-        line-height: 13px;
-        color: #FBFBFB;
-    }
-    .fa-envelope-open-text {
-        font-size: 26px;
-        color: $dark-blue;
     }
     .header-options {
         .navbar-toggler {
@@ -48,6 +50,18 @@
         font-size: 20px;
         line-height: 25px;
         color: $dark-blue;
+    }
+    .navbar-brand {
+        font-size: 14px;
+        font-weight: 700;
+        color: $dark-orange;
+        padding: 0;
+        margin: 0;
+        img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
     }
     .navbar-nav {
         .nav-item {
@@ -78,11 +92,157 @@
         }
         &.menu-options {
             align-items: center;
+            i {
+                font-size: 23px;
+            }
+            .fa-envelope-open-text {
+                font-size: 26px;
+                color: $dark-blue;
+            }
+            .nav-item {
+                .nav-link {
+                    padding: 0 12px
+                }
+            }
         }
-        &.menu-links {
-            @media(min-width: 992px) {
+    }
+}
+
+
+/*** small screens menu styles *****/
+
+.small-menus {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 9;
+    transition: all 0.3s ease;
+    transform: translateX(100%);
+    // overflow-x: auto;
+    &.show {
+        transform: translateX(0);
+    }
+    .menu-head {
+        padding: 63px 28px 23px 28px;
+        background: #fff linear-gradient(270deg, #E6E6E6 -30.64%, #FFFFFF 106.54%);
+        box-shadow: 0px 29px 24px rgba(0, 0, 0, 0.06), 0px 18.7963px 14.0556px rgba(0, 0, 0, 0.0455556), 0px 11.1704px 7.64444px rgba(0, 0, 0, 0.0364444), 0px 5.8px 3.9px rgba(0, 0, 0, 0.03), 0px 2.36296px 1.95556px rgba(0, 0, 0, 0.0235556), 0px 0.537037px 0.944444px rgba(0, 0, 0, 0.0144444);
+        background-image: url("../images/navbar.svg");
+        background-repeat: no-repeat;
+        background-position: right 0 top;
+        background-size: 320px auto;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 99;
+        .page-name {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 25px;
+            color: $dark-blue;
+        }
+        i {
+            color: $dark-blue;
+            font-size: 26px;
+        }
+        .navbar-toggler {
+            padding: 0;
+            border: 0;
+            margin-left: 38px;
+            i {
+                font-size: 27px;
+            }
+        }
+        .msg-num {
+            top: -9px;
+            right: -1px;
+        }
+    }
+    .menu-body {
+        width: 100%;
+        height: 100%;
+        display: block;
+        padding-left: 70px;
+        overflow-y: auto;
+    }
+    .menu-options {
+        width: 70px;
+        position: fixed;
+        left: 0;
+        top: 115px;
+        background: $dark-gray;
+        height: calc(100vh - 115px);
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        list-style: none;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 23px 10px;
+        text-align: center;
+        a {
+            font-weight: 700;
+            font-size: 10px;
+            line-height: 13px;
+            text-align: center;
+            color: #FBFBFB;
+            i {
+                display: block;
+                font-size: 26px;
+            }
+        }
+        .user-img {
+            width: 48px;
+            height: 48px;
+            background: #FBFBFB;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 8px;
+        }
+        .bottom-menu {
+            a {
+                display: block;
+                padding-top: 13px;
+                margin-top: 13px;
+                width: 100%;
+                border-top: 1px solid $light-blue;
+            }
+        }
+    }
+    .menu-links {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        padding: 0 10px;
+        list-style: none;
+        list-style-type: none;
+        padding-top: 120px;
+        .nav-item {
+            border-bottom: 0.5px solid #B6B6B6;
+            .nav-link {
+                padding: 25px 12px;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 19px;
+                color: #000000;
                 i {
-                    display: none;
+                    font-size: 23px;
+                    color: $light-blue;
+                    margin-right: 14px;
+                    vertical-align: middle;
                 }
             }
         }

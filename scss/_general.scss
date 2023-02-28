@@ -5,6 +5,10 @@ body {
     color: $dark-gray;
     font-size: 16px;
     background: #F2F2F2;
+    &.hide-scroll {
+        height: 100%;
+        overflow: hidden;
+    }
 }
 
 
@@ -31,17 +35,34 @@ body {
 /***** buttons style *****/
 
 .btn {
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
     &-warning {
         background: $dark-orange;
         border-color: $dark-orange;
         color: #fff;
-        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
-        transition: all 0.3s ease-in-out;
         &:hover {
             color: #fff;
             box-shadow: none;
             background: darken($dark-orange, 10%);
         }
+    }
+    &-secondary {
+        background: $mid-gray;
+        border-color: $mid-gray;
+        &:hover {
+            background: $dark-gray;
+            border-color: $dark-gray;
+        }
+    }
+}
+
+
+/**** texts style *****/
+
+.text {
+    &-dark-blue {
+        color: $dark-blue;
     }
 }
 
@@ -84,12 +105,13 @@ body {
                         background-image: url("../images/arrow-down.svg");
                         background-repeat: no-repeat;
                         background-position: center center;
-                        transition: all .2s ease-in-out;
+                        transition: all .3s ease-in-out;
                     }
                     &:not(.collapsed) {
                         border-radius: 10px 10px 0 0;
                         &::after {
-                            background-image: url("../images/close.svg");
+                            background-image: url("../images/arrow-down.svg");
+                            transform: rotate(180deg);
                         }
                     }
                 }

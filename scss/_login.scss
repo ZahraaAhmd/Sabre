@@ -1,0 +1,120 @@
+/**** login page styles *****/
+
+.Sb {
+    &-login-header {
+        background: $dark-blue url("../images/navbar.svg") no-repeat right top;
+        padding: 36px 0;
+        position: relative;
+        z-index: 99;
+        background-size: 100% auto;
+        @media(min-width: 992px) {
+            padding: 50px 0;
+        }
+    }
+    &-login {
+        position: relative;
+        .container {
+            max-width: 500px;
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+        h2 {
+            font-weight: 900;
+            font-size: 25px;
+            line-height: 31px;
+            color: $dark-blue;
+            margin-bottom: 10px;
+        }
+        .login-img {
+            margin-top: -20px;
+        }
+        .accordion {
+            .card {
+                box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+                .card-header {
+                    h2 {
+                        .btn {
+                            img {
+                                margin-right: 10px;
+                            }
+                            &::after {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .btn {
+            max-width: 100% !important;
+        }
+        .register-now {
+            margin-top: 33px;
+            @media(min-width: 992px) {
+                margin-top: 50px;
+            }
+            .btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 500;
+                height: 55px;
+                font-size: 20px;
+                border-radius: 6px;
+                img {
+                    margin-right: 11px;
+                }
+            }
+            p {
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 19px;
+                color: $dark-gray;
+                &.small-text {
+                    font-size: 12px;
+                    line-height: 15px;
+                }
+                @media(min-width: 992px) {
+                    font-size: 18px;
+                    line-height: 22px;
+                    &.small-text {
+                        font-size: 15px;
+                        line-height: 19px;
+                    }
+                }
+                a {
+                    color: $dark-blue
+                }
+            }
+        }
+        &.register-page {
+            position: relative;
+            background: url(../images/login.svg) no-repeat center top -10px;
+            padding-top: 80px;
+        }
+        &.logout-page {
+            .accordion {
+                .card {
+                    .card-body {
+                        background: #fff;
+                        padding: 38px 20px;
+                        @media(min-width: 992px) {
+                            padding: 38px 28px;
+                        }
+                        .logout-details {
+                            padding: 36px 0 61px 0;
+                            font-weight: 400;
+                            font-size: 15px;
+                            line-height: 19px;
+                            padding-right: 20px;
+                            @media(min-width: 992px) {
+                                font-size: 20px;
+                                line-height: 26px
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
