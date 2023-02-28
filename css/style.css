@@ -285,7 +285,7 @@ form .custom-switch .custom-control-input:checked ~ .custom-control-label::after
 }
 
 .navbar {
-  background-color: transparent !important;
+  background-color: #fff !important;
   background: linear-gradient(270deg, #E6E6E6 -30.64%, #FFFFFF 106.54%);
   box-shadow: 0px 29px 24px rgba(0, 0, 0, 0.06), 0px 18.7963px 14.0556px rgba(0, 0, 0, 0.0455556), 0px 11.1704px 7.64444px rgba(0, 0, 0, 0.0364444), 0px 5.8px 3.9px rgba(0, 0, 0, 0.03), 0px 2.36296px 1.95556px rgba(0, 0, 0, 0.0235556), 0px 0.53704px 0.94444px rgba(0, 0, 0, 0.0144444);
   padding: 10px 0;
