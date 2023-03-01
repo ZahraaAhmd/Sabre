@@ -29,14 +29,15 @@
 
                     <div class="card">
                         <div class="card-header" id="headingThree">
-                            <h2 class="mb-0">
-                                <button class="btn btn-link " type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <h2 class="mb-0" aria-disabled="true">
+                                <button class="btn btn-link " type="button">
                                     <img src="images/user3.svg">Login
                             </button>
                             </h2>
                         </div>
                         <div id="collapseThree" class="collapse show" aria-labelledby="headingThree">
                             <div class="card-body">
+                                <div class="alert-danger mb-3">Username or Password not correct</div>
 
                                 <form action="#" method="post">
                                     <div class="form-group mb-3">
@@ -68,7 +69,7 @@
             </div>
         </Section>
     </div>
-    <div class="Sb-footer">
+    <div class="Sb-footer fixed-bottom">
         <div class="container">
             <div class="terms text-center">
                 <a href="#">Terms of use | </a><a href="#">Privacy policy</a>

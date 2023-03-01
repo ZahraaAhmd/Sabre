@@ -6,5 +6,17 @@ $(document).ready(function() {
     $(".navbar-toggler").click(function() {
         $(".small-menus").toggleClass("show");
         $("body").toggleClass("hide-scroll");
-    })
+    });
+
+    /*** make navbar fixed when scroll */
+    /**** navbar fixed on top  */
+    $(document).scroll(function() {
+        var scroll = $(this).scrollTop();
+        var topDist = $(".navbar").position();
+        if (scroll > 300) {
+            $('.navbar').addClass('fixed-top');
+        } else if (scroll < 100) {
+            $('.navbar').removeClass('fixed-top');
+        }
+    });
 })

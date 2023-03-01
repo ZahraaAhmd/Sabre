@@ -27,6 +27,7 @@
     background: linear-gradient(270deg, #E6E6E6 -30.64%, #FFFFFF 106.54%);
     box-shadow: 0px 29px 24px rgba(0, 0, 0, 0.06), 0px 18.7963px 14.0556px rgba(0, 0, 0, 0.0455556), 0px 11.1704px 7.64444px rgba(0, 0, 0, 0.0364444), 0px 5.8px 3.9px rgba(0, 0, 0, 0.03), 0px 2.36296px 1.95556px rgba(0, 0, 0, 0.0235556), 0px 0.537037px 0.944444px rgba(0, 0, 0, 0.0144444);
     padding: 10px 0;
+    transition: all 0.3s ease-in-out;
     .container-fluid {
         max-width: 1400px;
     }
@@ -106,6 +107,10 @@
             }
         }
     }
+    &.fixed-top {
+        transition: all 0.3s ease-in-out;
+        // box-shadow: 0px 11px 10px rgba(222, 226, 230, 0.2);
+    }
 }
 
 
@@ -132,7 +137,7 @@
     }
     .menu-head {
         background-color: #f8f9fa!important;
-        padding: 63px 28px 23px 28px;
+        padding: 23px 28px 23px 28px;
         background: linear-gradient(270deg, #E6E6E6 -30.64%, #FFFFFF 106.54%);
         box-shadow: 0px 29px 24px rgba(0, 0, 0, 0.06), 0px 18.7963px 14.0556px rgba(0, 0, 0, 0.0455556), 0px 11.1704px 7.64444px rgba(0, 0, 0, 0.0364444), 0px 5.8px 3.9px rgba(0, 0, 0, 0.03), 0px 2.36296px 1.95556px rgba(0, 0, 0, 0.0235556), 0px 0.537037px 0.944444px rgba(0, 0, 0, 0.0144444);
         background-image: url("../images/navbar.svg");
@@ -179,10 +184,11 @@
         width: 70px;
         position: fixed;
         left: 0;
-        top: 115px;
+        top: 76px;
         background: $dark-gray;
-        height: calc(100vh - 115px);
+        height: calc(100vh - 76px);
         padding: 0;
+        padding-bottom: 20px;
         margin: 0;
         list-style-type: none;
         list-style: none;
@@ -230,7 +236,7 @@
         padding: 0 10px;
         list-style: none;
         list-style-type: none;
-        padding-top: 120px;
+        padding-top: 80px;
         .nav-item {
             border-bottom: 0.5px solid #B6B6B6;
             .nav-link {
