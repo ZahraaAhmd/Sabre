@@ -13,9 +13,9 @@ $(document).ready(function() {
     $(document).scroll(function() {
         var scroll = $(this).scrollTop();
         var topDist = $(".navbar").position();
-        if (scroll > 300) {
+        if (scroll > 100) {
             $('.navbar').addClass('fixed-top');
-        } else if (scroll < 100) {
+        } else {
             $('.navbar').removeClass('fixed-top');
         }
     });
