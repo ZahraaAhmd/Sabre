@@ -66,6 +66,19 @@ body.hide-scroll {
   color: #00529F;
 }
 
+/**** backgrounds style ****/
+.bg-dark-blue {
+  background: #00529F;
+}
+
+.bg-green {
+  background: #0C9A0C !important;
+}
+
+.bg-rose {
+  background: #EB2260 !important;
+}
+
 /***** accordion box style ******/
 .accordion .card {
   border: 0;
@@ -290,6 +303,7 @@ form .custom-switch .custom-control-input:checked ~ .custom-control-label::after
   box-shadow: 0px 29px 24px rgba(0, 0, 0, 0.06), 0px 18.7963px 14.0556px rgba(0, 0, 0, 0.0455556), 0px 11.1704px 7.64444px rgba(0, 0, 0, 0.0364444), 0px 5.8px 3.9px rgba(0, 0, 0, 0.03), 0px 2.36296px 1.95556px rgba(0, 0, 0, 0.0235556), 0px 0.53704px 0.94444px rgba(0, 0, 0, 0.0144444);
   padding: 10px 0;
   transition: all 0.3s ease-in-out;
+  z-index: 2;
 }
 
 .navbar .container-fluid {
@@ -396,6 +410,12 @@ form .custom-switch .custom-control-input:checked ~ .custom-control-label::after
   transform: translateX(100%);
 }
 
+@media (min-width: 992px) {
+  .small-menus {
+    display: none;
+  }
+}
+
 .small-menus.show {
   transform: translateX(0);
 }
@@ -468,6 +488,7 @@ form .custom-switch .custom-control-input:checked ~ .custom-control-label::after
   justify-content: space-between;
   flex-direction: column;
   padding: 23px 10px;
+  overflow-y: auto;
   text-align: center;
 }
 
@@ -745,6 +766,181 @@ form .custom-switch .custom-control-input:checked ~ .custom-control-label::after
     font-size: 20px;
     line-height: 26px;
   }
+}
+
+/**** notification page style *****/
+.notification-block {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 13px;
+  color: #000000;
+  align-items: center;
+  border-bottom: 0.5px solid #B6B6B6;
+  padding: 14px 8px;
+  margin: 0;
+}
+
+.notification-block .sender-img {
+  background: #195EAC;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+.notification-block .sender-img img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+}
+
+.notification-block .mail-title strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.notification-block .mail-time {
+  font-weight: 700;
+}
+
+@media (min-width: 992px) {
+  .notification-block {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    padding: 20px 8px;
+  }
+  .notification-block .mail-day {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.Sb-notification {
+  padding-top: 10px;
+}
+
+@media (min-width: 992px) {
+  .Sb-notification {
+    padding-top: 30px;
+  }
+}
+
+.Sb-notification .mail-day {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  color: #B6B6B6;
+  border-bottom: 0.5px solid #B6B6B6;
+  padding-bottom: 9px;
+  padding-top: 9px;
+}
+
+.Sb-notification .container {
+  max-width: 1000px;
+}
+
+.Sb-notification .notification-block {
+  cursor: pointer;
+}
+
+.mail-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background: rgba(72, 74, 75, 0.3);
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.mail-overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mail-block {
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 10px;
+  width: calc(100% - 20px);
+  height: 50%;
+  z-index: 12;
+  background: #FBFBFB;
+  /* Large Drop Shadow */
+  box-shadow: 0px 48px 80px rgba(0, 0, 0, 0.07), 0px 31.1111px 46.8519px rgba(0, 0, 0, 0.0531481), 0px 18.4889px 25.4815px rgba(0, 0, 0, 0.0425185), 0px 9.6px 13px rgba(0, 0, 0, 0.035), 0px 3.91111px 6.51852px rgba(0, 0, 0, 0.0274815), 0px 0.88889px 3.14815px rgba(0, 0, 0, 0.0168519);
+  border-radius: 25px 25px 0px 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(100%);
+}
+
+.mail-block.show {
+  transform: translateY(0);
+}
+
+.mail-block .notification-block {
+  padding-right: 12px;
+  padding-left: 12px;
+}
+
+.mail-block .notification-block .remove-mail {
+  padding: 0;
+  border: 0;
+  box-shadow: none;
+  margin: 0 auto;
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #C20626;
+}
+
+@media (min-width: 992px) {
+  .mail-block .notification-block .remove-mail {
+    font-size: 20px;
+  }
+}
+
+.mail-block .mail-content {
+  font-size: 13px;
+  padding: 20px;
+  max-height: calc(100% - 125px);
+  overflow-y: auto;
+}
+
+@media (min-width: 992px) {
+  .mail-block .mail-content {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .mail-block {
+    width: calc(70% - 20px);
+    left: 15%;
+  }
+}
+
+.mail-block .drag-box {
+  width: 134px;
+  height: 7px;
+  background: #B6B6B6;
+  border-radius: 100px;
+  margin: 0 auto 40px auto;
+  cursor: pointer;
 }
 
 .Sb-footer {

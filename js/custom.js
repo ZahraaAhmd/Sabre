@@ -19,4 +19,14 @@ $(document).ready(function() {
             $('.navbar').removeClass('fixed-top');
         }
     });
+
+    /**** mail notification toggle */
+    $(".Sb-notification .notification-block").click(function() {
+        $(".mail-block").addClass("show");
+        $(".mail-overlay").addClass("show");
+    });
+    $(".mail-overlay").click(function() {
+        $(".mail-block").removeClass("show");
+        $(".mail-overlay").removeClass("show");
+    })
 })

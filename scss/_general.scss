@@ -72,6 +72,21 @@ body {
 }
 
 
+/**** backgrounds style ****/
+
+.bg {
+    &-dark-blue {
+        background: $dark-blue;
+    }
+    &-green {
+        background: #0C9A0C !important;
+    }
+    &-rose {
+        background: #EB2260 !important;
+    }
+}
+
+
 /***** accordion box style ******/
 
 .accordion {
