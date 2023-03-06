@@ -43,6 +43,24 @@
     }
 }
 
+@media(max-width:767.98px) {
+    .Sb-calendar {
+        .calendar-box {
+            border-radius: 0;
+            background: transparent;
+            .bg-dark-blue {
+                display: none
+            }
+            .right-box {
+                border-radius: 0;
+                background: transparent;
+                box-shadow: none;
+                padding: 0;
+            }
+        }
+    }
+}
+
 @media(max-width:575.98px) {
     .main-content {
         background: #fff;
@@ -89,6 +107,13 @@
             font-size: 24px;
             margin-bottom: 6px;
         }
+    }
+}
+
+@media(max-width:340px) {
+    .Sb-calendar .calendar-box .calendar-table,
+    .Sb-calendar .avalible-box {
+        zoom: 0.8
     }
 }
 

@@ -28,5 +28,11 @@ $(document).ready(function() {
     $(".mail-overlay").click(function() {
         $(".mail-block").removeClass("show");
         $(".mail-overlay").removeClass("show");
-    })
+    });
+
+    /**** toggle AVl&UNV buttons */
+    $(".Sb-calendar .avalible-box .btn").click(function() {
+        $(".Sb-calendar .avalible-box .btn").removeClass("btn-toggled");
+        $(this).toggleClass("btn-toggled");
+    });
 })

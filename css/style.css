@@ -79,6 +79,18 @@ body.hide-scroll {
   background: #EB2260 !important;
 }
 
+.bg-light-gray {
+  background: #EBEBEB;
+}
+
+.bg-mid-gray {
+  background: #DBDBDB;
+}
+
+.bg-dark-gray {
+  background: #CBCBCB;
+}
+
 /***** accordion box style ******/
 .accordion .card {
   border: 0;
@@ -203,6 +215,97 @@ body.hide-scroll {
 /*** positions style *****/
 .relative {
   position: relative;
+}
+
+/**** calendar style ****/
+.state {
+  background: #F2F2F2;
+  border: 0.5px solid #cacaca;
+  height: 68px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  padding: 6px 4px;
+}
+
+@media (min-width: 992) {
+  .state {
+    padding: 6px 8px;
+  }
+}
+
+.state span {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.state small {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #484A4B;
+}
+
+.state.avl_open {
+  background: #E4F5FF;
+}
+
+.state.avl_open small {
+  color: #40C4FF;
+}
+
+.state.avl_locked small {
+  color: #00529F;
+}
+
+.state.unv_open {
+  background: rgba(246, 87, 21, 0.14);
+}
+
+.state.unv_open small {
+  color: #FB3010;
+}
+
+.state.unv_locked small {
+  color: #C20626;
+}
+
+.state.shift_open span {
+  align-items: center;
+  background: #007EC2;
+  color: #fff;
+}
+
+.state.shift_open small {
+  color: #007EC2;
+}
+
+.state.shift_locked span {
+  align-items: center;
+  background: #484A4B;
+  color: #fff;
+}
+
+.state.shift_locked small {
+  color: #484A4B;
+}
+
+.state.current_day::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 4px solid #40C4FF;
 }
 
 /***** form styles *****/
@@ -943,6 +1046,163 @@ form .custom-switch .custom-control-input:checked ~ .custom-control-label::after
   cursor: pointer;
 }
 
+/**** calendar page style ******/
+.Sb-calendar {
+  padding: 50px 0;
+  min-height: calc(100vh - 240px);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.Sb-calendar .container {
+  width: 100%;
+  max-width: 900px;
+}
+
+.Sb-calendar .calendar-box {
+  background: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 25px;
+}
+
+.Sb-calendar .calendar-box .bg-dark-blue {
+  background: #007EC2;
+  border-radius: 25px 0 0 25px;
+}
+
+.Sb-calendar .calendar-box .right-box {
+  padding: 30px;
+}
+
+@media (max-width: 767.98px) {
+  .Sb-calendar .calendar-box .right-box {
+    box-shadow: 0px 48px 80px rgba(0, 0, 0, 0.07), 0px 31.1111px 46.8519px rgba(0, 0, 0, 0.0531481), 0px 18.4889px 25.4815px rgba(0, 0, 0, 0.0425185), 0px 9.6px 13px rgba(0, 0, 0, 0.035), 0px 3.91111px 6.51852px rgba(0, 0, 0, 0.0274815), 0px 0.88889px 3.14815px rgba(0, 0, 0, 0.0168519);
+    border-radius: 10px;
+  }
+}
+
+.Sb-calendar .calendar-box .avalible-day {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.Sb-calendar .calendar-box .avalible-day h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.69);
+}
+
+.Sb-calendar .calendar-box .avalible-day h3 {
+  font-size: 90px;
+  font-weight: 800;
+}
+
+.Sb-calendar .calendar-box .calendar-head {
+  background: linear-gradient(90deg, #40C4FF 50.15%, #007EC2 201.39%);
+  border-radius: 10px 10px 0px 0px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: #fff;
+  text-align: center;
+  padding: 16px 0;
+}
+
+.Sb-calendar .calendar-box .calendar-table {
+  color: #000000;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.Sb-calendar .calendar-box .calendar-table .row {
+  margin: 0;
+}
+
+.Sb-calendar .calendar-box .calendar-table .row .col {
+  width: calc(100%/7);
+}
+
+.Sb-calendar .calendar-box .calendar-table .calendar-header {
+  background: #EBEBEB;
+}
+
+.Sb-calendar .calendar-box .calendar-table .calendar-header .day-name {
+  padding: 15px 10px;
+}
+
+.Sb-calendar .calendar-box .carousel .carousel-control-next,
+.Sb-calendar .calendar-box .carousel .carousel-control-prev {
+  height: 55px;
+  font-size: 24px;
+  color: #fff;
+  opacity: 1;
+}
+
+.Sb-calendar .avalible-box {
+  background: linear-gradient(360deg, #FFFFFF -168.75%, #F2F2F2 192.71%);
+  background: #fff;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 20px 8px 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  color: #484A4B;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.Sb-calendar .avalible-box .btn {
+  background: #FBFBFB;
+  /* Field Shadow */
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19px;
+  color: #484A4B;
+  text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+  width: 72.48px;
+  height: 30.75px;
+  border: 0;
+  border-radius: 10px;
+}
+
+.Sb-calendar .avalible-box .btn:first-child {
+  margin-right: -4px;
+  border-radius: 10px 0 0 10px;
+}
+
+.Sb-calendar .avalible-box .btn:last-child {
+  margin-right: -4px;
+  border-radius: 0 10px 10px 0;
+}
+
+.Sb-calendar .avalible-box .btn.btn-toggled {
+  background: #40C4FF;
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  .Sb-calendar .avalible-box {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .Sb-calendar .avalible-box .btn {
+    font-size: 20px;
+    width: 100.48px;
+    height: 50.75px;
+  }
+}
+
 .Sb-footer {
   background: #F2F2F2;
   padding: 24px 0;
@@ -1042,6 +1302,22 @@ form .custom-switch .custom-control-input:checked ~ .custom-control-label::after
   }
 }
 
+@media (max-width: 767.98px) {
+  .Sb-calendar .calendar-box {
+    border-radius: 0;
+    background: transparent;
+  }
+  .Sb-calendar .calendar-box .bg-dark-blue {
+    display: none;
+  }
+  .Sb-calendar .calendar-box .right-box {
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+  }
+}
+
 @media (max-width: 575.98px) {
   .main-content {
     background: #fff;
@@ -1082,6 +1358,13 @@ form .custom-switch .custom-control-input:checked ~ .custom-control-label::after
   .Sb-footer ul li a i {
     font-size: 24px;
     margin-bottom: 6px;
+  }
+}
+
+@media (max-width: 340px) {
+  .Sb-calendar .calendar-box .calendar-table,
+  .Sb-calendar .avalible-box {
+    zoom: 0.8;
   }
 }
 

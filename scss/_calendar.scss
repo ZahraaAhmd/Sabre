@@ -1,0 +1,137 @@
+/**** calendar page style ******/
+
+.Sb-calendar {
+    padding: 50px 0;
+    min-height: calc(100vh - 240px);
+    display: flex;
+    align-items: center;
+    position: relative;
+    .container {
+        width: 100%;
+        max-width: 900px;
+    }
+    .calendar-box {
+        background: #fff;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 25px;
+        .bg-dark-blue {
+            background: $blue;
+            border-radius: 25px 0 0 25px;
+        }
+        .right-box {
+            padding: 30px;
+            @media(max-width: 767.98px) {
+                box-shadow: 0px 48px 80px rgba(0, 0, 0, 0.07), 0px 31.1111px 46.8519px rgba(0, 0, 0, 0.0531481), 0px 18.4889px 25.4815px rgba(0, 0, 0, 0.0425185), 0px 9.6px 13px rgba(0, 0, 0, 0.035), 0px 3.91111px 6.51852px rgba(0, 0, 0, 0.0274815), 0px 0.888889px 3.14815px rgba(0, 0, 0, 0.0168519);
+                border-radius: 10px;
+            }
+        }
+        .avalible-day {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 20px;
+            h2 {
+                text-transform: uppercase;
+                font-weight: 300;
+                color: rgba(255, 255, 255, .69);
+            }
+            h3 {
+                font-size: 90px;
+                font-weight: 800;
+            }
+        }
+        .calendar-head {
+            background: linear-gradient(90deg, $light-blue 50.15%, $blue 201.39%);
+            border-radius: 10px 10px 0px 0px;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 23px;
+            color: #fff;
+            text-align: center;
+            padding: 16px 0;
+        }
+        .calendar-table {
+            color: #000000;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            .row {
+                margin: 0;
+                .col {
+                    width: calc(100%/7)
+                }
+            }
+            .calendar-header {
+                background: #EBEBEB;
+                .day-name {
+                    padding: 15px 10px;
+                }
+            }
+            .calendar-body {
+                .state {}
+            }
+        }
+        .carousel {
+            .carousel-control-next,
+            .carousel-control-prev {
+                height: 55px;
+                font-size: 24px;
+                color: #fff;
+                opacity: 1;
+            }
+        }
+    }
+    .avalible-box {
+        background: linear-gradient(360deg, #FFFFFF -168.75%, #F2F2F2 192.71%);
+        background: #fff;
+        border-radius: 10px;
+        margin-top: 20px;
+        padding: 20px 8px 20px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 19px;
+        color: #484A4B;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        .btn {
+            background: #FBFBFB;
+            /* Field Shadow */
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 19px;
+            color: #484A4B;
+            text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+            width: 72.48px;
+            height: 30.75px;
+            border: 0;
+            border-radius: 10px;
+            &:first-child {
+                margin-right: -4px;
+                border-radius: 10px 0 0 10px;
+            }
+            &:last-child {
+                margin-right: -4px;
+                border-radius: 0 10px 10px 0;
+            }
+            &.btn-toggled {
+                background: $light-blue;
+                color: #fff;
+            }
+        }
+        @media(min-width:992px) {
+            font-weight: 600;
+            font-size: 20px;
+            .btn {
+                font-size: 20px;
+                width: 100.48px;
+                height: 50.75px;
+            }
+        }
+    }
+}

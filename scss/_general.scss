@@ -84,6 +84,15 @@ body {
     &-rose {
         background: #EB2260 !important;
     }
+    &-light-gray {
+        background: #EBEBEB
+    }
+    &-mid-gray {
+        background: #DBDBDB
+    }
+    &-dark-gray {
+        background: #CBCBCB
+    }
 }
 
 
@@ -212,4 +221,91 @@ body {
 
 .relative {
     position: relative;
+}
+
+
+/**** calendar style ****/
+
+.state {
+    background: #F2F2F2;
+    border: 0.5px solid #cacaca;
+    height: 68px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    padding: 6px 4px;
+    @media(min-width: 992) {
+        padding: 6px 8px
+    }
+    span {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    small {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        color: #484A4B;
+    }
+    &.avl_open {
+        background: #E4F5FF;
+        small {
+            color: $light-blue;
+        }
+    }
+    &.avl_locked {
+        small {
+            color: $dark-blue;
+        }
+    }
+    &.unv_open {
+        background: rgba(246, 87, 21, 0.14);
+        small {
+            color: #FB3010;
+        }
+    }
+    &.unv_locked {
+        small {
+            color: #C20626;
+        }
+    }
+    &.shift_open {
+        span {
+            align-items: center;
+            background: $blue;
+            color: #fff;
+        }
+        small {
+            color: $blue;
+        }
+    }
+    &.shift_locked {
+        span {
+            align-items: center;
+            background: $dark-gray;
+            color: #fff;
+        }
+        small {
+            color: $dark-gray;
+        }
+    }
+    &.current_day {
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            border: 4px solid $light-blue;
+        }
+    }
 }
