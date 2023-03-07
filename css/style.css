@@ -1138,7 +1138,6 @@ form .custom-switch .custom-control-input:checked ~ .custom-control-label::after
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .Sb-calendar .calendar-box .calendar-table .row {
