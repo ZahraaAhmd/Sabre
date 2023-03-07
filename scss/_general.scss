@@ -235,6 +235,12 @@ body {
     flex-direction: column;
     align-content: center;
     justify-content: space-between;
+    &:first-child {
+        border-left: 1px solid #cacaca;
+    }
+    &:last-child {
+        border-right: 1px solid #cacaca;
+    }
     padding: 6px 4px;
     @media(min-width: 992) {
         padding: 6px 8px
@@ -255,9 +261,9 @@ body {
         color: #484A4B;
     }
     &.avl_open {
-        background: #E4F5FF;
+        background: #d7edc0;
         small {
-            color: $light-blue;
+            color: #68c704;
         }
     }
     &.avl_locked {
@@ -306,6 +312,15 @@ body {
             width: 100%;
             height: 100%;
             border: 4px solid $light-blue;
+        }
+    }
+    &.passed-day {
+        color: #AAAAAA;
+        span {
+            color: #AAAAAA
+        }
+        small {
+            color: #AAAAAA
         }
     }
 }

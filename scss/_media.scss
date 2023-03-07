@@ -20,7 +20,7 @@
         padding: 0 30px
     }
     .navbar {
-        padding: 23px 0 23px 0;
+        padding: 20px 0 20px 0;
         background-image: url("../images/navbar.svg");
         background-repeat: no-repeat;
         background-position: right 0 top;
@@ -30,6 +30,11 @@
         }
         .navbar-collapse {
             display: none
+        }
+        .navbar-brand img {
+            max-height: 35px;
+            width: auto;
+            border-radius: 0;
         }
     }
     .Sb-page-head {
@@ -45,9 +50,12 @@
 
 @media(max-width:767.98px) {
     .Sb-calendar {
+        padding: 10px 0;
         .calendar-box {
             border-radius: 0;
             background: transparent;
+            //box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            box-shadow: none;
             .bg-dark-blue {
                 display: none
             }
@@ -56,6 +64,9 @@
                 background: transparent;
                 box-shadow: none;
                 padding: 0;
+            }
+            .carousel .carousel-item {
+                padding: 20px 0px;
             }
         }
     }
@@ -107,6 +118,13 @@
             font-size: 24px;
             margin-bottom: 6px;
         }
+    }
+    .Sb-calendar .calendar-box .carousel .carousel-item {
+        padding: 0 0 20px 0px;
+    }
+    .Sb-calendar .calendar-box .carousel .carousel-control-next,
+    .Sb-calendar .calendar-box .carousel .carousel-control-prev {
+        top: 0;
     }
 }
 
