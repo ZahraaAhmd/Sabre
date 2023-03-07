@@ -69,6 +69,9 @@
                 padding: 20px 0px;
             }
         }
+        .avalible-box {
+            margin-top: 10px;
+        }
     }
 }
 
@@ -125,6 +128,14 @@
     .Sb-calendar .calendar-box .carousel .carousel-control-next,
     .Sb-calendar .calendar-box .carousel .carousel-control-prev {
         top: 0;
+    }
+    .Sb-calendar {
+        min-height: calc(100vh - 210px);
+        align-items: flex-start;
+        padding: 16px 0;
+    }
+    .Sb-calendar .avalible-box {
+        margin-top: 0;
     }
 }
 
