@@ -398,6 +398,18 @@ form .custom-switch .custom-control-input:checked ~ .custom-control-label::after
   transform: translateX(32px);
 }
 
+form .form-control.notes {
+  background: #FFFFFF;
+  /* Dark Grey */
+  border: 0.5px solid #484A4B;
+  /* Field Shadow */
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  width: 100%;
+  height: 339px;
+  padding: 20px;
+}
+
 /**** navbar style ******/
 .msg-num {
   background: #FB0707;
@@ -1144,6 +1156,7 @@ form .custom-switch .custom-control-input:checked ~ .custom-control-label::after
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  /**** timesheet page style ********/
 }
 
 .Sb-calendar .calendar-box .calendar-table .row {
@@ -1160,6 +1173,158 @@ form .custom-switch .custom-control-input:checked ~ .custom-control-label::after
 
 .Sb-calendar .calendar-box .calendar-table .calendar-header .day-name {
   padding: 15px 10px;
+}
+
+.Sb-calendar .calendar-box .calendar-table .calendar-header .day-name.active-day {
+  background: #00529F;
+  color: #fff;
+}
+
+.Sb-calendar .calendar-box .calendar-table .carousel-body {
+  background: #F2F2F2;
+  padding: 36px 16px;
+  min-height: 320px;
+  /**** journy page *****/
+}
+
+.Sb-calendar .calendar-box .calendar-table .carousel-body span,
+.Sb-calendar .calendar-box .calendar-table .carousel-body label {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  color: #484A4B;
+}
+
+.Sb-calendar .calendar-box .calendar-table .carousel-body .form-labels {
+  padding: 0;
+}
+
+.Sb-calendar .calendar-box .calendar-table .carousel-body .form-labels .col-form-label {
+  padding: 0;
+  text-align: left;
+}
+
+.Sb-calendar .calendar-box .calendar-table .carousel-body .form-labels .col-auto.col-form-label {
+  width: 80px;
+}
+
+.Sb-calendar .calendar-box .calendar-table .carousel-body .form-labels .form-control {
+  background: #FFFFFF;
+  border: 0.5px solid #484A4B;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.Sb-calendar .calendar-box .calendar-table .carousel-body .btn-white {
+  background: #FFFFFF;
+  /* Mid Grey */
+  border: 1px solid #B6B6B6;
+  border-radius: 5px;
+  color: #40C4FF;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+}
+
+.Sb-calendar .calendar-box .calendar-table .carousel-body .add-block label {
+  display: block;
+  margin-bottom: 13px;
+}
+
+.Sb-calendar .calendar-box .calendar-table .carousel-body .add-block .btn-warning {
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 15px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .Sb-calendar .calendar-box .calendar-table .carousel-body .add-block .btn-warning {
+    font-size: 16px;
+  }
+}
+
+.Sb-calendar .calendar-box .calendar-table .carousel-body .add-block .btn-warning i {
+  margin-right: 6px;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.Sb-calendar .calendar-box .calendar-table .carousel-body .journey-details .row {
+  border-bottom: 1px solid #9E9D9D;
+  padding: 20px 0;
+  align-items: center;
+}
+
+.Sb-calendar .calendar-box .calendar-table .carousel-body .journey-details .row:last-child {
+  border: 0;
+  padding-bottom: 0;
+}
+
+.Sb-calendar .calendar-box .calendar-table .carousel-body .journey-details .map-icon {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.Sb-calendar .calendar-box .calendar-table .carousel-body .journey-details .arrow {
+  margin-left: 11px;
+  margin-right: 15px;
+  color: #007EC2;
+}
+
+.Sb-calendar .calendar-box .calendar-table .carousel-body .journey-details .btn {
+  font-size: 20px;
+  border-radius: 13px;
+}
+
+.Sb-calendar .calendar-box .calendar-table .carousel-body .journey-details .btn-primary {
+  background: #40C4FF;
+  border-color: #40C4FF;
+}
+
+.Sb-calendar .calendar-box .calendar-table .form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 36px;
+}
+
+.Sb-calendar .calendar-box .calendar-table .form-footer span {
+  display: block;
+  width: 175px;
+  padding: 9px;
+  background: #E4F5FF;
+  border: 0.5px solid #484A4B;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 25px;
+  color: #00529F;
+}
+
+.Sb-calendar .calendar-box .calendar-table .form-footer .btn {
+  width: 136px;
+  height: 136px;
+  border-radius: 50%;
+  background: #fff;
+  border: 5px solid #F65715;
+  box-shadow: inset -5px 5px 0px rgba(64, 196, 255, 0.2);
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 19px;
+  color: #F65715;
+}
+
+.Sb-calendar .calendar-box .calendar-table .form-footer .btn i {
+  display: block;
+  font-size: 30px;
+  margin-bottom: 5px;
+  text-shadow: -5px 5px 0px rgba(64, 196, 255, 0.2);
 }
 
 .Sb-calendar .calendar-box .carousel .carousel-control-next,
@@ -1247,13 +1412,15 @@ form .custom-switch .custom-control-input:checked ~ .custom-control-label::after
   align-items: center;
   margin: 0;
   padding: 0;
+  border: 0;
 }
 
 .Sb-footer ul li {
   text-align: center;
 }
 
-.Sb-footer ul li a {
+.Sb-footer ul li a,
+.Sb-footer ul li .nav-link {
   display: block;
   color: #484A4B;
   font-weight: 700;
@@ -1263,7 +1430,8 @@ form .custom-switch .custom-control-input:checked ~ .custom-control-label::after
   text-decoration: none !important;
 }
 
-.Sb-footer ul li a i {
+.Sb-footer ul li a i,
+.Sb-footer ul li .nav-link i {
   display: block;
   font-size: 30px;
   color: #00529F;
@@ -1271,15 +1439,28 @@ form .custom-switch .custom-control-input:checked ~ .custom-control-label::after
   transition: all 0.3s ease-in-out;
 }
 
-.Sb-footer ul li a:hover {
+.Sb-footer ul li a:hover,
+.Sb-footer ul li .nav-link:hover {
   color: #F65715;
 }
 
-.Sb-footer ul li a:hover i {
+.Sb-footer ul li a:hover i,
+.Sb-footer ul li .nav-link:hover i {
   color: #F65715;
 }
 
 .Sb-footer ul li.active-page a i {
+  color: #F65715;
+}
+
+.Sb-footer ul li .nav-link {
+  padding: 0;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.Sb-footer ul li .nav-link.active i {
   color: #F65715;
 }
 

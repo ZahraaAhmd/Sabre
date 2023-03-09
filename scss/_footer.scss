@@ -10,9 +10,11 @@
         align-items: center;
         margin: 0;
         padding: 0;
+        border: 0;
         li {
             text-align: center;
-            a {
+            a,
+            .nav-link {
                 display: block;
                 color: $dark-gray;
                 font-weight: 700;
@@ -36,6 +38,17 @@
             }
             &.active-page {
                 a {
+                    i {
+                        color: $dark-orange
+                    }
+                }
+            }
+            .nav-link {
+                padding: 0;
+                background: transparent !important;
+                border: 0 !important;
+                box-shadow: none !important;
+                &.active {
                     i {
                         color: $dark-orange
                     }
