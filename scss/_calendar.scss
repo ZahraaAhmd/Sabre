@@ -82,7 +82,8 @@
             .carousel-body {
                 background: #F2F2F2;
                 padding: 36px 16px;
-                min-height: 320px;
+                min-height: 350px;
+                border-radius: 0 0 10px 10px;
                 span,
                 label {
                     font-weight: 400;
@@ -103,6 +104,7 @@
                         background: #FFFFFF;
                         border: 0.5px solid $dark-gray;
                         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+                        height: 42px;
                     }
                 }
                 .btn-white {
@@ -111,12 +113,12 @@
                     border: 1px solid #B6B6B6;
                     border-radius: 5px;
                     color: $light-blue;
-                    width: 48px;
-                    height: 48px;
+                    width: 42px;
+                    height: 41px;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    font-size: 21px;
+                    font-size: 19px;
                 }
                 .add-block {
                     label {
@@ -143,9 +145,12 @@
                 }
                 /**** journy page *****/
                 .journey-details {
+                    max-height: 230px;
+                    overflow-y: auto;
                     .row {
                         border-bottom: 1px solid #9E9D9D;
                         padding: 20px 0;
+                        margin: 0 15px;
                         align-items: center;
                         &:last-child {
                             border: 0;
@@ -162,11 +167,20 @@
                         color: #007EC2
                     }
                     .btn {
-                        font-size: 20px;
+                        font-size: 12px;
+                        border-radius: 13px;
+                        width: 31px;
+                        height: 31px;
+                        padding: 0;
                         border-radius: 13px;
                         &-primary {
                             background: $light-blue;
                             border-color: $light-blue;
+                        }
+                        @media(min-width: 768px) {
+                            font-size: 16px;
+                            width: 38px;
+                            height: 38px;
                         }
                     }
                 }

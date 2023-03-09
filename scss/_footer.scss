@@ -35,6 +35,12 @@
                         color: $dark-orange;
                     }
                 }
+                @media(max-width:575.98px) {
+                    font-size: 12px;
+                    i {
+                        font-size: 18px;
+                    }
+                }
             }
             &.active-page {
                 a {

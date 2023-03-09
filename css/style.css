@@ -406,7 +406,7 @@ form .form-control.notes {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
   width: 100%;
-  height: 339px;
+  height: 225px;
   padding: 20px;
 }
 
@@ -1183,7 +1183,8 @@ form .form-control.notes {
 .Sb-calendar .calendar-box .calendar-table .carousel-body {
   background: #F2F2F2;
   padding: 36px 16px;
-  min-height: 320px;
+  min-height: 350px;
+  border-radius: 0 0 10px 10px;
   /**** journy page *****/
 }
 
@@ -1212,6 +1213,7 @@ form .form-control.notes {
   background: #FFFFFF;
   border: 0.5px solid #484A4B;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+  height: 42px;
 }
 
 .Sb-calendar .calendar-box .calendar-table .carousel-body .btn-white {
@@ -1220,12 +1222,12 @@ form .form-control.notes {
   border: 1px solid #B6B6B6;
   border-radius: 5px;
   color: #40C4FF;
-  width: 48px;
-  height: 48px;
+  width: 42px;
+  height: 41px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 21px;
+  font-size: 19px;
 }
 
 .Sb-calendar .calendar-box .calendar-table .carousel-body .add-block label {
@@ -1255,9 +1257,15 @@ form .form-control.notes {
   vertical-align: middle;
 }
 
+.Sb-calendar .calendar-box .calendar-table .carousel-body .journey-details {
+  max-height: 230px;
+  overflow-y: auto;
+}
+
 .Sb-calendar .calendar-box .calendar-table .carousel-body .journey-details .row {
   border-bottom: 1px solid #9E9D9D;
   padding: 20px 0;
+  margin: 0 15px;
   align-items: center;
 }
 
@@ -1278,13 +1286,25 @@ form .form-control.notes {
 }
 
 .Sb-calendar .calendar-box .calendar-table .carousel-body .journey-details .btn {
-  font-size: 20px;
+  font-size: 12px;
+  border-radius: 13px;
+  width: 31px;
+  height: 31px;
+  padding: 0;
   border-radius: 13px;
 }
 
 .Sb-calendar .calendar-box .calendar-table .carousel-body .journey-details .btn-primary {
   background: #40C4FF;
   border-color: #40C4FF;
+}
+
+@media (min-width: 768px) {
+  .Sb-calendar .calendar-box .calendar-table .carousel-body .journey-details .btn {
+    font-size: 16px;
+    width: 38px;
+    height: 38px;
+  }
 }
 
 .Sb-calendar .calendar-box .calendar-table .form-footer {
@@ -1447,6 +1467,17 @@ form .form-control.notes {
 .Sb-footer ul li a:hover i,
 .Sb-footer ul li .nav-link:hover i {
   color: #F65715;
+}
+
+@media (max-width: 575.98px) {
+  .Sb-footer ul li a,
+  .Sb-footer ul li .nav-link {
+    font-size: 12px;
+  }
+  .Sb-footer ul li a i,
+  .Sb-footer ul li .nav-link i {
+    font-size: 18px;
+  }
 }
 
 .Sb-footer ul li.active-page a i {
