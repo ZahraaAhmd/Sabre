@@ -1,0 +1,65 @@
+/**** tables style *****/
+
+.table-responsive.bordered {
+    border: 1px solid $light-blue;
+    border-radius: 10px;
+    .table {
+        margin-bottom: 0;
+    }
+}
+
+.table {
+    tr {
+        td {
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 225%;
+            color: $dark-gray;
+            padding-right: 14px;
+            padding-left: 14px;
+            &.text-blue {
+                color: $blue;
+            }
+        }
+        &:first-child {
+            td {
+                &:first-child {}
+                &:last-child {}
+            }
+        }
+    }
+    &.table-striped {
+        tbody {
+            tr {
+                background: #fff;
+                &:nth-of-type(odd) {
+                    background: #E4F5FF;
+                }
+            }
+        }
+        tfoot {
+            background: $light-blue;
+            td {
+                color: #fff;
+                border-right-color: #fff;
+                &:last-child {
+                    border-right: 0;
+                }
+            }
+        }
+    }
+    &.table-bordered {
+        td {
+            border: 0;
+            border-bottom: 1px solid $light-blue;
+            border-right: 1px solid $light-blue;
+            &:last-child {
+                border-right: 0;
+            }
+        }
+        tfoot {
+            background: $light-blue;
+            border-bottom: 0;
+        }
+    }
+}

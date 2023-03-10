@@ -69,6 +69,9 @@ body {
     &-dark-blue {
         color: $dark-blue;
     }
+    &-dark-orange {
+        color: $dark-orange
+    }
 }
 
 
@@ -211,6 +214,25 @@ body {
             &+.breadcrumb-item::before {
                 content: "/";
                 color: $light-blue
+            }
+        }
+    }
+    @media(min-width:992px) {
+        &.small {
+            min-height: 100px;
+            h1 {
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 25px;
+                margin-bottom: 0;
+            }
+            .breadcrumb {
+                background: transparent;
+                padding: 0;
+                margin-bottom: 10px;
+                .breadcrumb-item {
+                    font-size: 14px;
+                }
             }
         }
     }

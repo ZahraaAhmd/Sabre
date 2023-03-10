@@ -1,0 +1,17 @@
+/*** sort block style ****/
+
+.table-sort {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    .btn {
+        width: 37px !important;
+        height: 37px !important;
+        border-radius: 50% !important;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

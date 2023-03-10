@@ -66,6 +66,10 @@ body.hide-scroll {
   color: #00529F;
 }
 
+.text-dark-orange {
+  color: #F65715;
+}
+
 /**** backgrounds style ****/
 .bg-dark-blue {
   background: #00529F;
@@ -210,6 +214,26 @@ body.hide-scroll {
 .Sb-page-head .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
   content: "/";
   color: #40C4FF;
+}
+
+@media (min-width: 992px) {
+  .Sb-page-head.small {
+    min-height: 100px;
+  }
+  .Sb-page-head.small h1 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 25px;
+    margin-bottom: 0;
+  }
+  .Sb-page-head.small .breadcrumb {
+    background: transparent;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  .Sb-page-head.small .breadcrumb .breadcrumb-item {
+    font-size: 14px;
+  }
 }
 
 /*** positions style *****/
@@ -408,6 +432,65 @@ form .form-control.notes {
   width: 100%;
   height: 225px;
   padding: 20px;
+}
+
+/**** tables style *****/
+.table-responsive.bordered {
+  border: 1px solid #40C4FF;
+  border-radius: 10px;
+}
+
+.table-responsive.bordered .table {
+  margin-bottom: 0;
+}
+
+.table tr td {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 225%;
+  color: #484A4B;
+  padding-right: 14px;
+  padding-left: 14px;
+}
+
+.table tr td.text-blue {
+  color: #007EC2;
+}
+
+.table.table-striped tbody tr {
+  background: #fff;
+}
+
+.table.table-striped tbody tr:nth-of-type(odd) {
+  background: #E4F5FF;
+}
+
+.table.table-striped tfoot {
+  background: #40C4FF;
+}
+
+.table.table-striped tfoot td {
+  color: #fff;
+  border-right-color: #fff;
+}
+
+.table.table-striped tfoot td:last-child {
+  border-right: 0;
+}
+
+.table.table-bordered td {
+  border: 0;
+  border-bottom: 1px solid #40C4FF;
+  border-right: 1px solid #40C4FF;
+}
+
+.table.table-bordered td:last-child {
+  border-right: 0;
+}
+
+.table.table-bordered tfoot {
+  background: #40C4FF;
+  border-bottom: 0;
 }
 
 /**** navbar style ******/
@@ -1416,6 +1499,24 @@ form .form-control.notes {
     width: 100.48px;
     height: 50.75px;
   }
+}
+
+/*** sort block style ****/
+.table-sort {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.table-sort .btn {
+  width: 37px !important;
+  height: 37px !important;
+  border-radius: 50% !important;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .Sb-footer {
