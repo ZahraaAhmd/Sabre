@@ -35,4 +35,21 @@ $(document).ready(function() {
         $(".Sb-calendar .avalible-box .btn").removeClass("btn-toggled");
         $(this).toggleClass("btn-toggled");
     });
+
+    /**** stopWatch customize */
+    $(".nice-button").click(function() {
+        $(".nice-button").toggleClass("d-none");
+
+    });
+    $("#start").click(function() {
+        $(".clock-hand").addClass("start");
+        $(".clock-hand").removeClass("puase");
+        $(".option-block").addClass("played");
+
+    });
+    $("#puase").click(function() {
+        $(".clock-hand").removeClass("start");
+        $(".clock-hand").addClass("puase");
+        $(".option-block").removeClass("played");
+    });
 })

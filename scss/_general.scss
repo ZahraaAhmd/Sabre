@@ -346,3 +346,46 @@ body {
         }
     }
 }
+
+
+/*** nice-button style ******/
+
+.nice-button {
+    width: 136px;
+    height: 136px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: inset -5px 5px 0px rgba(64, 196, 255, 0.2);
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 19px;
+    i {
+        display: block;
+        font-size: 30px;
+        margin-bottom: 5px;
+        text-shadow: -5px 5px 0px rgba(64, 196, 255, 0.2);
+    }
+    &.btn-outline-warning {
+        border: 8px solid $dark-orange;
+        color: $dark-orange;
+    }
+    &.btn-outline-success {
+        border: 8px solid #77C206;
+        color: #77C206;
+        &:hover {
+            background: #77C206;
+            box-shadow: none;
+        }
+    }
+    &.btn-outline-danger {
+        border: 8px solid #C20626;
+        color: #C20626;
+        &:hover {
+            background: #C20626;
+            box-shadow: none;
+        }
+    }
+    &:hover {
+        color: #fff
+    }
+}

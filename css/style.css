@@ -352,6 +352,54 @@ body.hide-scroll {
   color: #AAAAAA;
 }
 
+/*** nice-button style ******/
+.nice-button {
+  width: 136px;
+  height: 136px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: inset -5px 5px 0px rgba(64, 196, 255, 0.2);
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 19px;
+}
+
+.nice-button i {
+  display: block;
+  font-size: 30px;
+  margin-bottom: 5px;
+  text-shadow: -5px 5px 0px rgba(64, 196, 255, 0.2);
+}
+
+.nice-button.btn-outline-warning {
+  border: 8px solid #F65715;
+  color: #F65715;
+}
+
+.nice-button.btn-outline-success {
+  border: 8px solid #77C206;
+  color: #77C206;
+}
+
+.nice-button.btn-outline-success:hover {
+  background: #77C206;
+  box-shadow: none;
+}
+
+.nice-button.btn-outline-danger {
+  border: 8px solid #C20626;
+  color: #C20626;
+}
+
+.nice-button.btn-outline-danger:hover {
+  background: #C20626;
+  box-shadow: none;
+}
+
+.nice-button:hover {
+  color: #fff;
+}
+
 /***** form styles *****/
 form .input-with-icon {
   display: flex;
@@ -1410,26 +1458,6 @@ form .form-control.notes {
   color: #00529F;
 }
 
-.Sb-calendar .calendar-box .calendar-table .form-footer .btn {
-  width: 136px;
-  height: 136px;
-  border-radius: 50%;
-  background: #fff;
-  border: 5px solid #F65715;
-  box-shadow: inset -5px 5px 0px rgba(64, 196, 255, 0.2);
-  font-weight: 900;
-  font-size: 15px;
-  line-height: 19px;
-  color: #F65715;
-}
-
-.Sb-calendar .calendar-box .calendar-table .form-footer .btn i {
-  display: block;
-  font-size: 30px;
-  margin-bottom: 5px;
-  text-shadow: -5px 5px 0px rgba(64, 196, 255, 0.2);
-}
-
 .Sb-calendar .calendar-box .carousel .carousel-control-next,
 .Sb-calendar .calendar-box .carousel .carousel-control-prev {
   height: 55px;
@@ -1517,6 +1545,236 @@ form .form-control.notes {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/***** stop watch style ******/
+@media (min-width: 600px) {
+  .Sb-stopWatch {
+    padding-top: 50px;
+  }
+}
+
+.Sb-stopWatch .container {
+  padding: 0;
+}
+
+@media (min-width: 600px) {
+  .Sb-stopWatch .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.Sb-stopWatch .inner-container {
+  background: #fff;
+}
+
+@media (min-width: 600px) {
+  .Sb-stopWatch .inner-container {
+    max-width: 390px;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  }
+}
+
+.Sb-stopWatch .inner-container .clock-block {
+  background: #E9F4FA;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.Sb-stopWatch .inner-container .clock-block .text-center {
+  font-size: 40px;
+  font-weight: 800;
+  color: #007EC2;
+  line-height: 1;
+}
+
+.Sb-stopWatch .inner-container .clock-block .text-center span {
+  font-size: 20px;
+  font-weight: 400;
+  display: block;
+}
+
+.Sb-stopWatch .inner-container .clock-border {
+  width: 300px;
+  height: 300px;
+  margin: 30px auto 0 auto;
+  border-radius: 50%;
+  background: #E9F4FA;
+  box-shadow: inset -5px 5px 0px rgba(64, 196, 255, 0.2);
+  border: 20px solid #36a3e0;
+}
+
+.Sb-stopWatch .inner-container .clock {
+  position: relative;
+  color: #007EC2;
+}
+
+.Sb-stopWatch .inner-container .clock .clock-face {
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  margin-left: 2px;
+  width: 3px;
+  height: 13px;
+  background: #d7e0e6;
+  border-radius: 2px;
+  z-index: 0;
+  transform-origin: 50% 122px;
+}
+
+.Sb-stopWatch .inner-container .clock .clock-face.three, .Sb-stopWatch .inner-container .clock .clock-face.six, .Sb-stopWatch .inner-container .clock .clock-face.nine, .Sb-stopWatch .inner-container .clock .clock-face.twelve {
+  background: #529bcd;
+  width: 4px;
+  height: 18px;
+}
+
+.Sb-stopWatch .inner-container .clock .clock-face.one {
+  transform: rotate(30deg);
+}
+
+.Sb-stopWatch .inner-container .clock .clock-face.two {
+  transform: rotate(60deg);
+}
+
+.Sb-stopWatch .inner-container .clock .clock-face.three {
+  transform: rotate(90deg);
+}
+
+.Sb-stopWatch .inner-container .clock .clock-face.four {
+  transform: rotate(120deg);
+}
+
+.Sb-stopWatch .inner-container .clock .clock-face.five {
+  transform: rotate(150deg);
+}
+
+.Sb-stopWatch .inner-container .clock .clock-face.six {
+  transform: rotate(180deg);
+}
+
+.Sb-stopWatch .inner-container .clock .clock-face.seven {
+  transform: rotate(210deg);
+}
+
+.Sb-stopWatch .inner-container .clock .clock-face.eight {
+  transform: rotate(240deg);
+}
+
+.Sb-stopWatch .inner-container .clock .clock-face.nine {
+  transform: rotate(270deg);
+}
+
+.Sb-stopWatch .inner-container .clock .clock-face.ten {
+  transform: rotate(300deg);
+}
+
+.Sb-stopWatch .inner-container .clock .clock-face.eleven {
+  transform: rotate(330deg);
+}
+
+.Sb-stopWatch .inner-container .clock .clock-hand {
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  margin-left: 1px;
+  width: 6px;
+  height: 115px;
+  background-image: linear-gradient(to bottom, #529bcd, #7ab1d8, #9fc8e2, #c4deee, #e9f4fa);
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: center 110px;
+  transform: rotate(0);
+  animation-name: secunda;
+  animation-duration: 60s;
+  animation-delay: 0;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+}
+
+.Sb-stopWatch .inner-container .clock .clock-hand.start {
+  animation-play-state: running;
+}
+
+.Sb-stopWatch .inner-container .clock .clock-hand.stop {
+  animation-play-state: paused;
+}
+
+.Sb-stopWatch .inner-container .clock .time-block {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 100px;
+  z-index: 2;
+  left: 0;
+  text-align: center;
+  color: #007EC2;
+  font-size: 40px;
+  font-weight: 800;
+  padding: 0 20px;
+  margin-left: 4px;
+}
+
+.Sb-stopWatch .inner-container .clock .time-block span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.Sb-stopWatch .inner-container .clock .time-block small {
+  display: block;
+  color: #717171;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.Sb-stopWatch .inner-container .stopwatch-options .option-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 16px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19px;
+  color: #C20626;
+}
+
+.Sb-stopWatch .inner-container .stopwatch-options .option-block p {
+  margin-bottom: 10px;
+}
+
+.Sb-stopWatch .inner-container .stopwatch-options .option-block p:last-child {
+  margin-bottom: 0;
+}
+
+.Sb-stopWatch .inner-container .stopwatch-options .option-block p .icon {
+  width: 26px;
+  display: inline-block;
+}
+
+.Sb-stopWatch .inner-container .stopwatch-options .option-block p.disabled-text {
+  color: #E6E6E6;
+}
+
+.Sb-stopWatch .inner-container .stopwatch-options .option-block.played {
+  color: #77C206;
+}
+
+.Sb-stopWatch .inner-container .stopwatch-options .option-block.played p.disabled-text {
+  color: #77C206;
+}
+
+/* ANIMATION */
+@keyframes secunda {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .Sb-footer {

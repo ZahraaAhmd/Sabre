@@ -202,24 +202,6 @@
                     line-height: 25px;
                     color: $dark-blue;
                 }
-                .btn {
-                    width: 136px;
-                    height: 136px;
-                    border-radius: 50%;
-                    background: #fff;
-                    border: 5px solid $dark-orange;
-                    box-shadow: inset -5px 5px 0px rgba(64, 196, 255, 0.2);
-                    font-weight: 900;
-                    font-size: 15px;
-                    line-height: 19px;
-                    color: $dark-orange;
-                    i {
-                        display: block;
-                        font-size: 30px;
-                        margin-bottom: 5px;
-                        text-shadow: -5px 5px 0px rgba(64, 196, 255, 0.2);
-                    }
-                }
             }
         }
         .carousel {

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Sabre</title>
+</head>
+
+<body>
+    <div class="main-content">
+        <!-- start header block -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand d-none d-lg-block" href="profile.html">
+                    <img src="images/profile-img.jpg">
+                </a>
+                <div class="d-block d-lg-none">
+                    <a class="navbar-brand" href="home.html"><img src="images/logo.jpg"></a>
+                </div>
+                <div class="header-options d-block d-lg-none">
+                    <a class="relative" href="#">
+                        <i class="fas fa-envelope-open-text"></i>
+                        <span class="msg-num">1</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- nav menus -->
+                    <ul class="navbar-nav mx-auto menu-links">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="calendar.html">Calendar</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Assignments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Shift Stopwatch</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Timesheets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Invoices</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Application</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto menu-options">
+                        <li class="nav-item">
+                            <a class="nav-link relative" href="#">
+                                <i class="fas fa-envelope-open-text"></i>
+                                <span class="msg-num">1</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="far fa-question-circle"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-sign-out-alt"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- small screens menu -->
+        <div class="small-menus">
+            <!-- small screens head -->
+            <div class="menu-head d-flex  align-items-center justify-content-between">
+                <div class="page-name">
+                    <a class="menu-brand" href="home.html"><img src="images/logo.jpg"></a>
+                </div>
+                <div class="header-options">
+                    <a class="relative" href="notifications.html">
+                        <i class="fas fa-envelope-open-text"></i>
+                        <span class="msg-num">1</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-times"></i>
+            </button>
+
+                </div>
+            </div>
+            <div class="menu-body">
+                <!-- nav menus -->
+                <ul class="menu-options d-flex align-items-center justify-content-between">
+                    <li>
+                        <a href="profile.html"><span class="user-img"><img src="images/user.svg"></span> Profile</a>
+                    </li>
+                    <li class="bottom-menu">
+                        <a href="#"><i class="far fa-question-circle"></i> help</a>
+                        <a href="logout.html"><i class="fas fa-sign-out-alt"></i> logout</a>
+                    </li>
+                </ul>
+                <ul class="menu-links">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="calendar.html"><i class="far fa-calendar"></i> Calendar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-file-alt"></i> Assignments</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-stopwatch"></i> Shift Stopwatch</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="far fa-clock"></i> Timesheets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-file-invoice"></i> Invoices</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="far fa-edit"></i> Application</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <!-- start section profile head -->
+        <section class="Sb-page-head small">
+            <div class="container">
+                <h1>Acme Driving Co-op Newcastle (Driving)</h1>
+            </div>
+        </section>
+
+
+        <!-- start section stopwatch -->
+        <section class="Sb-stopWatch">
+            <div class="container">
+                <div class="inner-container">
+                    <div class="clock-block">
+                        <div class="text-center text-uppercase">
+                            Monday <span>march 13,2024</span>
+                        </div>
+                        <div class="clock-border">
+                            <div class="clock">
+                                <span class="clock-hand"></span>
+                                <div class="time-block">
+                                    <span>
+                                        <span class="sw-hr">00</span>
+                                    <small>Hrs</small>
+                                    </span>
+                                    :
+                                    <span>
+                                        <span class="sw-min">00</span>
+                                    <small>Mins</small>
+                                    </span>
+                                </div>
+                                <span class="clock-face twelve"></span>
+                                <span class="clock-face one"></span>
+                                <span class="clock-face two"></span>
+                                <span class="clock-face three"></span>
+                                <span class="clock-face four"></span>
+                                <span class="clock-face five"></span>
+                                <span class="clock-face six"></span>
+                                <span class="clock-face seven"></span>
+                                <span class="clock-face eight"></span>
+                                <span class="clock-face nine"></span>
+                                <span class="clock-face ten"></span>
+                                <span class="clock-face eleven"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="stopwatch-options">
+                        <div class="option-block">
+                            <div>
+                                <p><span class="icon"><i class="fas fa-wifi"></i></span>Connection</p>
+                                <p class="disabled-text"><span class="icon"><i class="fas fa-map-marker-alt"></i></span>Location</p>
+                            </div>
+                            <div>
+                                <button class="btn btn-outline-success nice-button" id="start"><i class="fas fa-play mb-3"></i>Start Shift</button>
+                                <button class="btn btn-outline-danger nice-button d-none" id="puase"><i class="fas fa-pause"></i>End Shift</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="Sb-footer fixed-bottom">
+        <div class="container">
+            <ul>
+                <li><a href="#"><i class="far fa-calendar"></i>Calendar</a></li>
+                <li class="active">
+                    <a href="#"><i class="fas fa-stopwatch"></i>Stopwatch</a>
+                </li>
+                <li>
+                    <a href="#"><i class="far fa-clock"></i>Timesheet</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-home"></i>Home</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/jquery.min.js "></script>
+    <script src="js/popper.min.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/custom.js "></script>
+    <script src="js/watch.js"></script>
+</body>
